@@ -8,6 +8,5 @@
 # Allow these files
 !.gitignore
 !LICENSE
-!mcsetupenv.exe
 !README.md
-!startup.bat
+!IDEA.md

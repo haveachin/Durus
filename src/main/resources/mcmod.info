@@ -1,0 +1,16 @@
+[
+{
+  "modid": "durus",
+  "name": "Durus",
+  "description": "If you thought that minecraft wasn't hard enough. This mod aims to add more variety to the difficulties in Minecraft.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/haveachin/Durus",
+  "updateUrl": "",
+  "authorList": ["Haveachin"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
