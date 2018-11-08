@@ -1,31 +1,34 @@
 package de.haveachin.durus.util.handlers;
 
-import net.minecraft.client.Minecraft;
+import de.haveachin.durus.Main;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.network.FMLNetworkEvent;
 
 @EventBusSubscriber
 public class RegistryHandler
 {
 	@SubscribeEvent
-	public void onEntityJoinWorld(EntityJoinWorldEvent event)
+	public static void onEntityJoinWorld(EntityJoinWorldEvent event)
 	{
-		World w = event.getEntity().getEntityWorld();
+		Entity entity = event.getEntity();
 		
-		if (w == null)
-		{
-			System.out.println("The world is null!");
+		if (entity == null || !(entity instanceof EntityPlayer))
 			return;
-		}
+		
+		World w = entity.getEntityWorld();
+		
+		if (w == null || !w.isRemote)
+			return;
 		
 		String log = new StringBuilder()
 				.append("World difficulty: ")
 				.append(w.getDifficulty().toString())
 				.toString();
 		
-		System.out.println(log);
+		Main.logger.info(log);
 	}
 }

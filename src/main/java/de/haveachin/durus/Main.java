@@ -4,8 +4,10 @@ import org.apache.logging.log4j.Logger;
 
 import de.haveachin.durus.proxy.CommonProxy;
 import de.haveachin.durus.util.Reference;
+import de.haveachin.durus.util.handlers.RegistryHandler;
 import net.minecraft.world.EnumDifficulty;
 import net.minecraft.world.World;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -27,6 +29,7 @@ public class Main
 	public static void preInit(FMLPreInitializationEvent e)
 	{
 		logger = e.getModLog();
+		logger.info("Hello there");
 	}
 	
 	@Mod.EventHandler
