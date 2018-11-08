@@ -1,11 +1,11 @@
 # Durus
-If you thought that minecraft wasn't hard enough. This mod aims to add more variety to the difficulties in Minecraft. Now making it harder to eat, see and regenerate health.
+If you thought that minecraft wasn't hard enough. This mod aims to add more variety to the difficulties in Minecraft.
 
-Ever felt like sleeping in Minecraft should be more beneficial, then fear not! Making it mandatory to have a bed early on, this mod features effects and buffs upon waking up that you do not want to miss out on.
+Ever felt like sleeping in Minecraft should be more beneficial, then brace yourself! Making it mandatory to have a bed early on, this mod features effects and buffs upon waking up that you do not want to miss out on.
 
-But don't be a sleepy sloth! Licking the warm, dripping blood or ehm, bone?, from your sword will give you quiet the kick.
+But don't be a sleepy sloth! Licking the warm, dripping blood or ehm, bone?, from your sword will give you quiet the thrill.
 
-Enough of the talking now. Let's get into it.
+Enough of the talking now. Let's get onto it.
 
 ## Easy
 - health will regenerate by eating food (regenerates the same amount as the food points)
