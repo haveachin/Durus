@@ -21,3 +21,17 @@ public class RegistryHandler
 		System.console().writer().println(log);
 	}
 }
+
+/*
+	Error:
+	
+	java.lang.NullPointerException: Exception in server tick loop
+			at de.haveachin.durus.util.handlers.RegistryHandler.onWorldLoad(RegistryHandler.java:21)
+			at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_4_RegistryHandler_onWorldLoad_Load.invoke(.dynamic)
+			at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+			at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+			at net.minecraft.server.integrated.IntegratedServer.loadAllWorlds(IntegratedServer.java:133)
+			at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160)
+			at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:552)
+			at java.lang.Thread.run(Unknown Source)
+*/
