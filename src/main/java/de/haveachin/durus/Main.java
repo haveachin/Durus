@@ -4,7 +4,6 @@ import org.apache.logging.log4j.Logger;
 
 import de.haveachin.durus.proxy.CommonProxy;
 import de.haveachin.durus.util.Reference;
-import de.haveachin.durus.util.handlers.RegistryHandler;
 import net.minecraft.world.EnumDifficulty;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
@@ -24,6 +23,7 @@ public class Main
 	public static CommonProxy proxy;
 	
 	public static Logger logger;
+	public static EnumDifficulty difficulty;
 	
 	@Mod.EventHandler
 	public static void preInit(FMLPreInitializationEvent e)
