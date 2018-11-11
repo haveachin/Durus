@@ -26,6 +26,9 @@ public class PlayerWakeUp
 		if (w == null || w.isRemote || event.updateWorld())
 			return;
 		
+		if (PlayerRunning.playerSprintTimes.containsKey(p))
+			PlayerRunning.playerSprintTimes.remove(p);
+		
 		switch(Main.difficulty)
 		{
 		case EASY:

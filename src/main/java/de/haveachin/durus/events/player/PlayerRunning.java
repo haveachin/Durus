@@ -17,7 +17,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @EventBusSubscriber
 public class PlayerRunning
 {
-	private static Map<EntityPlayer, Integer> playerSprintTimes = new HashMap<EntityPlayer, Integer>();
+	public static Map<EntityPlayer, Integer> playerSprintTimes = new HashMap<EntityPlayer, Integer>();
 	
 	@SubscribeEvent
 	public static void onPlayerRunning(LivingUpdateEvent event)
@@ -36,7 +36,14 @@ public class PlayerRunning
 		
 		if (!p.isSprinting())
 		{
-			if (playerSprintTimes.containsKey(p))
+			if (!playerSprintTimes.containsKey(p))
+				return;
+			
+			int sprintTime = playerSprintTimes.get(p) - 1;
+			
+			if (sprintTime > 0)
+				playerSprintTimes.put(p, sprintTime);
+			else
 				playerSprintTimes.remove(p);
 			
 			return;
