@@ -42,7 +42,7 @@ Enough of the talking now. Let's get onto it.
     | Strength            | I     | 8s       | 100%   |
     | Mining Fatigue      | I     | 3s       | 25%    |
 
-- sprinting may cause fatigue (don't sprint to long or you might become exhausted; one random effect from the list below):
+- sprinting may cause fatigue (don't sprint to long or you might become exhausted; after running for 20 seconds there is a 10% chance to get a debuff every second):
 
     | Effect              | Level | Duration |
     | ------------------- | :---: | -------: |
@@ -68,7 +68,7 @@ Enough of the talking now. Let's get onto it.
     | Strength            | II    | 5s       | 100%   |
     | Mining Fatigue      | I     | 3s       | 25%    |
 
-- sprinting may cause fatigue (don't sprint to long or you might become exhausted; one random effect from the list below):
+- sprinting may cause fatigue (don't sprint to long or you might become exhausted; after running for 20 seconds there is a 10% chance to get a debuff every second):
 
     | Effect              | Level | Duration |
     | ------------------- | :---: | -------: |
