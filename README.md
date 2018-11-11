@@ -14,15 +14,15 @@ Enough of the talking now. Let's get onto it.
     | Effect              | Level | Duration |
     | ------------------- | :---: | -------: |
     | Instant Health      | II    | -        |
-    | Strength            | I     | 180s     |
+    | Strength            | I     | 12min    |
     | Hunger              | I     | 10s      |
 
 - killing a hostile mob will grant:
 
-    | Effect              | Level | Duration |
-    | ------------------- | :---: | -------: |
-    | Strength            | I     | 10s      |
-    | Mining Fatigue      | I     | 3s       |
+    | Effect              | Level | Duration | Chance |
+    | ------------------- | :---: | -------: | -----: |
+    | Strength            | I     | 10s      | 100%   |
+    | Mining Fatigue      | I     | 3s       | 25%    |
 
 ## Normal
 - health will regenerate by eating food (regenerates half of the food points; flooring the number)
@@ -31,16 +31,16 @@ Enough of the talking now. Let's get onto it.
     | Effect              | Level | Duration |
     | ------------------- | :---: | -------: |
     | Instant Health      | II    | -        |
-    | Strength            | I     | 180s     |
+    | Strength            | I     | 10min    |
     | Hunger              | I     | 20s      |
     | Blindness           | I     | 10s      |
 
 - killing a hostile mob will grant:
 
-    | Effect              | Level | Duration |
-    | ------------------- | :---: | -------: |
-    | Strength            | I     | 8s       |
-    | Mining Fatigue      | I     | 3s       |
+    | Effect              | Level | Duration | Chance |
+    | ------------------- | :---: | -------: | -----: |
+    | Strength            | I     | 8s       | 100%   |
+    | Mining Fatigue      | I     | 3s       | 25%    |
 
 - sprinting may cause fatigue (don't sprint to long or you might become exhausted; one random effect from the list below):
 
@@ -56,21 +56,21 @@ Enough of the talking now. Let's get onto it.
     | Effect              | Level | Duration |
     | ------------------- | :---: | -------: |
     | Instant Health      | I     | -        |
-    | Strength            | I     | 180s     |
+    | Strength            | I     | 8min     |
     | Hunger              | I     | 30s      |
     | Blindness           | I     | 15s      |
     | Slowness            | I     | 15s      |
 
 - killing a hostile mob will grant:
 
-    | Effect              | Level | Duration |
-    | ------------------- | :---: | -------: |
-    | Strength            | II    | 5s       |
-    | Mining Fatigue      | I     | 3s       |
+    | Effect              | Level | Duration | Chance |
+    | ------------------- | :---: | -------: | -----: |
+    | Strength            | II    | 5s       | 100%   |
+    | Mining Fatigue      | I     | 3s       | 25%    |
 
 - sprinting may cause fatigue (don't sprint to long or you might become exhausted; one random effect from the list below):
 
     | Effect              | Level | Duration |
     | ------------------- | :---: | -------: |
     | Slowness            | II    | 5s       |
-    | Hunger              | II    | 5s       |
+    | Hunger              | II    | 5s       | 

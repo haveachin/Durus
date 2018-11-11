@@ -1,6 +1,7 @@
 package de.haveachin.durus.events.game;
 
 import de.haveachin.durus.Main;
+import net.minecraft.world.EnumDifficulty;
 import net.minecraft.world.GameRules;
 import net.minecraft.world.World;
 import net.minecraftforge.event.world.WorldEvent;
@@ -23,12 +24,10 @@ public class WorldLoad
 		
 		Main.logger.info(new StringBuilder().append("Playing in ").append(Main.difficulty.toString()).toString());
 		
-		// Disable health regeneration
-		GameRules gameRules = w.getGameRules();
-		
-		if (gameRules == null || !gameRules.getBoolean("naturalRegeneration"))
+		if (Main.difficulty == EnumDifficulty.PEACEFUL)
 			return;
 		
-		gameRules.setOrCreateGameRule("naturalRegeneration", "false");
+		// Disable health regeneration
+		Rules.setNaturalRegeneration(w, false);
 	}
 }
